@@ -11,3 +11,6 @@ The dependencies I'm using are:
 - JDBC
 - Reactor Netty
     - This was added directly to the pom.xml, and is needed to use the full Websocket functionality with STOMP
+
+## Notes:
+- Websockets require the use of STOMP and SockJS
