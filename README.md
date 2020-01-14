@@ -1,4 +1,4 @@
-# Spring_Websockets
+# Spring Websockets
 Learning Websockets using the Spring Framework
 
 I'm using the tutorial as listed here:
