@@ -14,3 +14,4 @@ The dependencies I'm using are:
 
 ## Notes:
 - Websockets require the use of STOMP and SockJS
+- In the config, it requires the application destination to be the same in the client 
