@@ -10,11 +10,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ChatController {
 
-    // Will help us map the same message from client to server
-    @MessageMapping("/chat.register")
-    // Will specify the queue: The request channel and response channel
-    // based on the URL
+    // @MessageMapping will help us map the same message from client to server
+    // @SendTo will specify the queue: The request channel and response channel based on the URL
     // Note that this also uses /topic endpoint, because it should be the same
+    @MessageMapping("/chat.register")
     @SendTo("/topic/public")
     public ChatMessage register(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor){
         // get the username of the chat sender this way:
