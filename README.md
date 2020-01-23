@@ -23,6 +23,7 @@ The dependencies I'm using are:
     - Last, the response channel takes the message from the Simple Broker and the end user receives the message
     - Note: The endpoints for the request channel and response channel need to be consistent
         - This is the @SendTo, in your controller, which takes the endpoint from SimpleBroker in your WsConfig
+    - <a href="https://www.javainuse.com/spring-boot-websocket-chat-architecture.jpg">Example Image of Architecture in Spring App</a>
 - WebSockets require the use of STOMP and SockJS
 - In the config, the endpoint made requires the application destination in the server to be the same in the client
     - In this case, it is the /topic endpoint
