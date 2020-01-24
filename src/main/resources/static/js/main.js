@@ -23,9 +23,11 @@ function connect(event) {
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
-        var socket = new SockJS('/stomp');
+        var socket = new SockJS('/iggy');
         stompClient = Stomp.over(socket);
 
+        console.log(socket, "socket");
+        console.log(stompClient, "client");
         stompClient.connect({}, onConnected, onError);
     }
     event.preventDefault();
@@ -117,5 +119,5 @@ function getAvatarColor(messageSender) {
     return colors[index];
 }
 
-usernameForm.addEventListener('submit', connect, true)
-messageForm.addEventListener('submit', send, true)
+usernameForm.addEventListener('submit', connect, true);
+messageForm.addEventListener('submit', send, true);
